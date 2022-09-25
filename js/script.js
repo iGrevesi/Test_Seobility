@@ -64,13 +64,16 @@ window.addEventListener('mousemove', function(e) {
 const prev = document.querySelector('.offer__slider-prev'),
       next = document.querySelector('.offer__slider-next'),
       img = document.querySelector('.image_One'),
-      img2 = document.querySelector('.image_Two');
-   
+      img2 = document.querySelector('.image_Two'),
+      background = document.querySelector('.main__Wrapper');
+
 next.addEventListener('click', () => {
     
     img.classList.toggle("left");
     img.classList.toggle("image_One");
     img2.classList.toggle("left");
+    background.classList.toggle("red")
+
     
 });
 
