@@ -89,6 +89,7 @@ next.addEventListener('click', () => {
     bg3.classList.toggle("balls3");
 
     if (background.classList.contains('purple')){
+        
         title.textContent = "Создание маркетплейса для бизнеса по перепродаже одежды";
         subtitle.textContent = "Brands&Charity — благотворительная онлайн — платформа для перепродажи брендовых вещей, цель которой превратить ненужные одним людям вещи в полезный ресурс для других.";
         type.textContent = "Интернет-магазины ";
