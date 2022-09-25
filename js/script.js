@@ -55,4 +55,29 @@ window.addEventListener('mousemove', function(e) {
     bg.style.transform = 'translate(-' + x * 125 + '%, -' + y * 125 + '%)';
     bg2.style.transform = 'translate(-' + x * 125 + '%, -' + y * 125 + '%)';
     bg3.style.transform = 'translate(-' + x * 125 + '%, -' + y * 125 + '%)';
+});
+
+
+
+
+
+const prev = document.querySelector('.offer__slider-prev'),
+      next = document.querySelector('.offer__slider-next'),
+      img = document.querySelector('.image_One'),
+      img2 = document.querySelector('.image_Two');
+   
+next.addEventListener('click', () => {
+    
+    img.classList.toggle("left");
+    img.classList.toggle("image_One");
+    img2.classList.toggle("left");
+    
+});
+
+prev.addEventListener('click', () => {
+    img.classList.toggle("left");
+    img.classList.toggle("image_One");
+    img2.classList.toggle("left");
+    img2.classList.toggle("image_Two");
+    
 });;

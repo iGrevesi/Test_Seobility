@@ -130,15 +130,44 @@ h1 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 70.66%, rgba(51, 51, 51, 0.643) 90.82%, rgba(0, 0, 0, 0.94) 102.78%), linear-gradient(115.51deg, #333333 0%, #596368 53.13%, #333333 100%);
   border: 1.54049px solid #333333;
   border-radius: 18.4858px;
-  -webkit-transform: rotate(-0.57deg);
-      -ms-transform: rotate(-0.57deg);
-          transform: rotate(-0.57deg);
 }
 
 .main__Wrapper .notebook__Screen {
   position: absolute;
   left: 474.99px;
   top: 159.64px;
+}
+
+.main__Wrapper .notebook__Screen .image_One {
+  position: absolute;
+  -webkit-transition-duration: 300ms;
+       -o-transition-duration: 300ms;
+          transition-duration: 300ms;
+  left: 0;
+  top: 5px;
+  -webkit-transform: rotate(0.57deg);
+      -ms-transform: rotate(0.57deg);
+          transform: rotate(0.57deg);
+}
+
+.main__Wrapper .notebook__Screen .image_Two {
+  position: absolute;
+  -webkit-transition-duration: 300ms;
+       -o-transition-duration: 300ms;
+          transition-duration: 300ms;
+  top: 4px;
+  width: 752px;
+  left: 0;
+  padding-top: 5px;
+}
+
+.main__Wrapper .notebook__Screen .left {
+  position: absolute;
+  left: -800px;
+  opacity: 0;
+  -webkit-transition-duration: 1500ms;
+       -o-transition-duration: 1500ms;
+          transition-duration: 1500ms;
 }
 
 .main__Wrapper .notebook__Keywords {
