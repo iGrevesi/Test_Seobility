@@ -65,15 +65,41 @@ const prev = document.querySelector('.offer__slider-prev'),
       next = document.querySelector('.offer__slider-next'),
       img = document.querySelector('.image_One'),
       img2 = document.querySelector('.image_Two'),
-      background = document.querySelector('.main__Wrapper');
+      background = document.querySelector('.main__Wrapper'),
+      title = document.querySelector('.pop__Title'),
+      subtitle = document.querySelector('.pop__Subtitle'),
+      type = document.querySelector('.type'),
+      industry = document.querySelector('.industry');
 
 next.addEventListener('click', () => {
     
     img.classList.toggle("left");
     img.classList.toggle("image_One");
     img2.classList.toggle("left");
-    background.classList.toggle("red")
+    
+    background.classList.toggle("purple");
 
+    bg.classList.toggle("union");
+    bg.classList.toggle("balls");
+
+    bg2.classList.toggle("union_2");
+    bg2.classList.toggle("balls2");
+
+    bg3.classList.toggle("union_3");
+    bg3.classList.toggle("balls3");
+
+    if (background.classList.contains('purple')){
+        title.textContent = "Создание маркетплейса для бизнеса по перепродаже одежды";
+        subtitle.textContent = "Brands&Charity — благотворительная онлайн — платформа для перепродажи брендовых вещей, цель которой превратить ненужные одним людям вещи в полезный ресурс для других.";
+        type.textContent = "Интернет-магазины ";
+        industry.textContent = "Торговля";
+        
+    } else {
+        title.textContent = "Создание корпоративного сайта для холдинга «АМКОДОР»";
+        subtitle.textContent = "Разработать и запустить корпоративный сайт для холдинга “АМКОДОР” для развития дилерской сети на рынках Беларуси и стран СНГ.";
+        type.textContent = "Корпоративные сайты";
+        industry.textContent = "Производство, Торговля";
+    }
     
 });
 
@@ -81,6 +107,16 @@ prev.addEventListener('click', () => {
     img.classList.toggle("left");
     img.classList.toggle("image_One");
     img2.classList.toggle("left");
-    img2.classList.toggle("image_Two");
+    
+    background.classList.toggle("purple")
+
+    bg.classList.toggle("union")
+    bg.classList.toggle("balls")
+
+    bg2.classList.toggle("union_2")
+    bg2.classList.toggle("balls2")
+
+    bg3.classList.toggle("union_3")
+    bg3.classList.toggle("balls3")
     
 });;
